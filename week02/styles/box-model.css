@@ -1,10 +1,10 @@
 .callout {
 	width: 500px;
 	margin: 12px;
-	border: 1px solid rgba(243, 241, 241, 0.886);
+	border: 1px solid rgba(243, 241, 241, 0.95);
 	padding: 10px;
 	background-color: rgba(9, 102, 241, 0.854);
-	color: #e4dcdc57;
+	color: #fcf7f7f4;
 }
 
 .callout img {
@@ -12,7 +12,7 @@
 	margin: 0 0 10px 15px;
 	border: 1px solid #191616a2;
 	padding: 3px;
-	background-color: #f1ececde;
+	background-color: #fef9f9;
 	width: 100px;
 	height: auto;
 	
