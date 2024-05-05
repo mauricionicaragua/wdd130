@@ -10,8 +10,8 @@ body {
     --accent1-color: #3423A6;
     --accent2-color: #466362;
 
-    --heading-font:var(--heading-font);
-    --paragraph-font:var(--paragraph-font);
+    --heading-font:'',serif;
+    --paragraph-font:'',serif;
 
     --nav-background-color: #04313bab;
     --nav-link-color: #c7e9f0f2;
