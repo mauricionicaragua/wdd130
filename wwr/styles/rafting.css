@@ -56,3 +56,6 @@ nav a:hover {
 section h2{
     color: steelblue;
 }
+.sociallinks{
+    display: grid;
+}
