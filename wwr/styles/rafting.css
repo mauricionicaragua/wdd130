@@ -1,25 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
 :root {
+    --backdrop-dark: #222;
+    --fontcolor-dark: #aaa;
+    --fontcolor-dark-headers: #fff;
     --primary-color: #171738;
     --secondary-color: #2BD9FE;
     --accent1-color: #3423A6;
     --accent2-color: #466362;
-
+    
     --heading-font: 'Roboto', serif;
     --paragraph-font: 'Roboto', serif;
-
+    
     --nav-background-color: #04313bab;
     --nav-link-color: #0dd0f7f2;
     --nav-hover-link-color: #070707f7;
     --nav-hover-background-color: #2fc0f0dc;
-
+    
+}
+body {
+    font-family: var(--paragraph-font);
+    min-width: max-content;
+    margin: 0;
+    background-color: var(--backdrop-dark);
+    color: var(--fontcolor-dark);
 }
 
 h1,
@@ -30,18 +34,24 @@ h2 {
 
 header {
     display: grid;
-    padding: 20px;
     background-color: var(--accent1-color);
+    margin: 0 auto;
 }
 
 p {
     padding: 25px;
 }
-
+.logo {
+    width: inherit;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: center;
 }
 
 nav a {
@@ -59,11 +69,16 @@ nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
 }
-
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0;
+}
+.hero h1 {
+    width: inherit;
+    text-align: center;
+    color: var(--fontcolor-dark-headers);
 }
 
 section h2 {
@@ -143,4 +158,67 @@ section h2 {
 }
 .text-inputs input {
     min-height: 25px;
+}
+
+/*component trips*/
+.components {
+    display: flex;
+}
+.brother {
+    padding: 0 25px;
+}
+.pictures {
+    display: flex;
+    justify-content: space-between;
+}
+.pictures figure {
+    margin: 0 20px;
+
+}
+.pictures figure img {
+    width: 100%;
+    height: 100%;
+}
+.btn {
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 25px;
+}
+.btn button {
+    background-color: #3423A6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.btn button a {
+    text-decoration: none;
+    color: var(--fontcolor-dark);
+}
+
+/*table*/
+.info {
+    width: inherit;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+h2 {
+    color: var(--fontcolor-dark-headers);
+}
+table {
+    border: none;
+}
+th {
+    border-bottom: #7a7a7a solid 2px;
+    padding: 15px;
+}
+td {
+    
+    padding: 15px;
+    border-bottom: #7a7a7a solid 1px;
+    margin: 0;
 }
